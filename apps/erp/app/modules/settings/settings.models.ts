@@ -221,3 +221,7 @@ export const webhookValidator = z
 export const jobTravelerSettingsValidator = z.object({
   jobTravelerIncludeWorkInstructions: zfd.checkbox()
 });
+
+export const timeClockSettingsValidator = z.object({
+  timeClockEnabled: zfd.checkbox()
+});
