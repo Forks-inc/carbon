@@ -10,8 +10,16 @@ import {
   magicLinkValidator,
   RATE_LIMIT
 } from "@carbon/auth";
-import { sendMagicLink, verifyAuthSession } from "@carbon/auth/auth.server";
-import { flash, getAuthSession } from "@carbon/auth/session.server";
+import {
+  sendMagicLink,
+  signInWithEmail,
+  verifyAuthSession
+} from "@carbon/auth/auth.server";
+import {
+  flash,
+  getAuthSession,
+  setAuthSession
+} from "@carbon/auth/session.server";
 import { getUserByEmail } from "@carbon/auth/users.server";
 import { sendVerificationCode } from "@carbon/auth/verification.server";
 import { Hidden, Input, Submit, ValidatedForm, validator } from "@carbon/form";
@@ -90,7 +98,7 @@ export async function action({ request }: ActionFunctionArgs) {
     return error(validation.error, "Invalid email address");
   }
 
-  const { email, turnstileToken } = validation.data;
+  const { email, password, turnstileToken, redirectTo } = validation.data;
 
   if (
     CarbonEdition === Edition.Cloud &&
@@ -126,6 +134,22 @@ export async function action({ request }: ActionFunctionArgs) {
   const user = await getUserByEmail(email);
 
   if (user.data && user.data.active) {
+    if (password) {
+      const authSession = await signInWithEmail(email, password);
+      if (authSession) {
+        return redirect(redirectTo || path.to.authenticatedRoot, {
+          headers: {
+            "Set-Cookie": await setAuthSession(request, { authSession })
+          }
+        });
+      } else {
+        return data(
+          error(null, "Invalid email or password"),
+          await flash(request, error(null, "Invalid email or password"))
+        );
+      }
+    }
+
     const magicLink = await sendMagicLink(email);
 
     if (magicLink.error) {
@@ -322,6 +346,12 @@ export default function LoginRoute() {
               )}
 
               <Input name="email" label="" placeholder={t`Email Address`} />
+              <Input
+                name="password"
+                type="password"
+                label=""
+                placeholder={t`Password`}
+              />
 
               <Submit
                 isDisabled={

@@ -1402,7 +1402,7 @@ msgstr "L'audit logging n'est pas activé"
 msgid "Audit Logs"
 msgstr "Journaux d'audit"
 
-#: apps/erp/app/routes/_public+/login.tsx:285
+#: apps/erp/app/routes/_public+/login.tsx:309
 msgid "Authentication Error"
 msgstr "Erreur d'authentification"
 
@@ -1641,7 +1641,7 @@ msgstr "par {byUser}"
 msgid "By accepting the invite, you agree to the <0>Terms of Service</0> and <1>Privacy Policy</1>."
 msgstr "En acceptant l'invitation, vous acceptez les <0>Conditions d'utilisation</0> et la <1>Politique de confidentialité</1>."
 
-#: apps/erp/app/routes/_public+/login.tsx:368
+#: apps/erp/app/routes/_public+/login.tsx:398
 msgid "By signing in, you agree to the <0>Terms of Service</0> and <1>Privacy Policy.</1>"
 msgstr "En vous connectant, vous acceptez les <0>Conditions d'utilisation</0> et la <1>Politique de confidentialité.</1>"
 
@@ -1935,7 +1935,7 @@ msgstr "Colonne Carbon"
 
 #: apps/erp/app/routes/_public+/invite.$code.tsx:116
 #: apps/erp/app/routes/_public+/invite.$code.tsx:148
-#: apps/erp/app/routes/_public+/login.tsx:227
+#: apps/erp/app/routes/_public+/login.tsx:251
 #: apps/erp/app/routes/_public+/magic-link.tsx:26
 #: apps/erp/app/routes/_public+/verify.tsx:147
 msgid "Carbon Logo"
@@ -2026,7 +2026,7 @@ msgstr "Plan comptable"
 msgid "Chat"
 msgstr "Chat"
 
-#: apps/erp/app/routes/_public+/login.tsx:236
+#: apps/erp/app/routes/_public+/login.tsx:260
 msgid "Check your email"
 msgstr "Vérifiez votre email"
 
@@ -4745,7 +4745,7 @@ msgstr "Modifier le centre de travail"
 msgid "Email"
 msgstr "E-mail"
 
-#: apps/erp/app/routes/_public+/login.tsx:324
+#: apps/erp/app/routes/_public+/login.tsx:348
 #: apps/erp/app/routes/x+/users+/operators.$operatorId.tsx:143
 msgid "Email Address"
 msgstr "Adresse e-mail"
@@ -7065,7 +7065,7 @@ msgstr "Verrouiller"
 msgid "Log In"
 msgstr "Se connecter"
 
-#: apps/erp/app/routes/_public+/login.tsx:362
+#: apps/erp/app/routes/_public+/login.tsx:392
 msgid "Login or create a new account"
 msgstr "Connectez-vous ou créez un nouveau compte"
 
@@ -9040,6 +9040,10 @@ msgstr "Partenaires"
 msgid "Parts"
 msgstr "Pièces"
 
+#: apps/erp/app/routes/_public+/login.tsx:353
+msgid "Password"
+msgstr ""
+
 #: apps/erp/app/modules/resources/ui/Suggestions/SuggestionDetails.tsx:151
 msgid "Path"
 msgstr "Chemin"
@@ -10223,7 +10227,7 @@ msgstr "Enregistrement supprimé"
 msgid "Records"
 msgstr "Enregistrements"
 
-#: apps/erp/app/routes/_public+/login.tsx:254
+#: apps/erp/app/routes/_public+/login.tsx:278
 msgid "Redirecting to verification page..."
 msgstr "Redirection vers la page de vérification..."
 
@@ -11796,15 +11800,15 @@ msgstr "Afficher les vignettes des pièces sur les devis, les commandes de vente
 msgid "Show sync options"
 msgstr "Afficher les options de synchronisation"
 
-#: apps/erp/app/routes/_public+/login.tsx:337
+#: apps/erp/app/routes/_public+/login.tsx:367
 msgid "Sign in with Email"
 msgstr "Se connecter avec Email"
 
-#: apps/erp/app/routes/_public+/login.tsx:301
+#: apps/erp/app/routes/_public+/login.tsx:325
 msgid "Sign in with Google"
 msgstr "Se connecter avec Google"
 
-#: apps/erp/app/routes/_public+/login.tsx:314
+#: apps/erp/app/routes/_public+/login.tsx:338
 msgid "Sign in with Outlook"
 msgstr "Se connecter avec Outlook"
 
@@ -13644,7 +13648,7 @@ msgstr "Utilisez ... pour obtenir l'ID de pièce suivant"
 msgid "Use ... to get the next tool ID"
 msgstr "Utilisez ... pour obtenir l'ID d'outil suivant"
 
-#: apps/erp/app/routes/_public+/login.tsx:267
+#: apps/erp/app/routes/_public+/login.tsx:291
 #: apps/erp/app/routes/_public+/verify.tsx:182
 msgid "Use a different email"
 msgstr "Utiliser une adresse e-mail différente"
@@ -13738,7 +13742,7 @@ msgstr "Numéro de TVA"
 msgid "Verification Error"
 msgstr "Erreur de vérification"
 
-#: apps/erp/app/routes/_public+/login.tsx:248
+#: apps/erp/app/routes/_public+/login.tsx:272
 #: apps/erp/app/routes/_public+/verify.tsx:162
 msgid "Verify your email"
 msgstr "Vérifiez votre email"
@@ -14023,11 +14027,11 @@ msgstr "Nous avons mappé chaque colonne à ce que nous croyons être correct, m
 msgid "We've sent a verification code to {email}"
 msgstr "Nous avons envoyé un code de vérification à {email}"
 
-#: apps/erp/app/routes/_public+/login.tsx:251
+#: apps/erp/app/routes/_public+/login.tsx:275
 msgid "We've sent a verification code to {signupEmail}"
 msgstr "Nous avons envoyé un code de vérification à {signupEmail}"
 
-#: apps/erp/app/routes/_public+/login.tsx:239
+#: apps/erp/app/routes/_public+/login.tsx:263
 msgid "We've sent you a magic link to sign in to your account."
 msgstr "Nous vous avons envoyé un lien magique pour vous connecter à votre compte."
 

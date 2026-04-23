@@ -29,6 +29,7 @@ export const magicLinkValidator = z.object({
     .string()
     .min(1, { message: "Email is required" })
     .email("Must be a valid email"),
+  password: zfd.text(z.string().optional()),
   redirectTo: zfd.text(z.string().optional()),
   turnstileToken: zfd.text(z.string().optional())
 });

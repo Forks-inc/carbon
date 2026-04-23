@@ -1402,7 +1402,7 @@ msgstr "ऑडिट लॉगिंग सक्षम नहीं है"
 msgid "Audit Logs"
 msgstr "ऑडिट लॉग्स"
 
-#: apps/erp/app/routes/_public+/login.tsx:285
+#: apps/erp/app/routes/_public+/login.tsx:309
 msgid "Authentication Error"
 msgstr "प्रमाणीकरण त्रुटि"
 
@@ -1641,7 +1641,7 @@ msgstr "द्वारा {byUser}"
 msgid "By accepting the invite, you agree to the <0>Terms of Service</0> and <1>Privacy Policy</1>."
 msgstr "आमंत्रण स्वीकार करके, आप <0>सेवा की शर्तें</0> और <1>गोपनीयता नीति</1> से सहमत हैं।"
 
-#: apps/erp/app/routes/_public+/login.tsx:368
+#: apps/erp/app/routes/_public+/login.tsx:398
 msgid "By signing in, you agree to the <0>Terms of Service</0> and <1>Privacy Policy.</1>"
 msgstr "साइन इन करके, आप <0>सेवा की शर्तें</0> और <1>गोपनीयता नीति</1> से सहमत हैं।"
 
@@ -1935,7 +1935,7 @@ msgstr "कार्बन कॉलम"
 
 #: apps/erp/app/routes/_public+/invite.$code.tsx:116
 #: apps/erp/app/routes/_public+/invite.$code.tsx:148
-#: apps/erp/app/routes/_public+/login.tsx:227
+#: apps/erp/app/routes/_public+/login.tsx:251
 #: apps/erp/app/routes/_public+/magic-link.tsx:26
 #: apps/erp/app/routes/_public+/verify.tsx:147
 msgid "Carbon Logo"
@@ -2026,7 +2026,7 @@ msgstr "खातों की सूची"
 msgid "Chat"
 msgstr "चैट"
 
-#: apps/erp/app/routes/_public+/login.tsx:236
+#: apps/erp/app/routes/_public+/login.tsx:260
 msgid "Check your email"
 msgstr "अपना ईमेल जांचें"
 
@@ -4745,7 +4745,7 @@ msgstr "कार्य केंद्र संपादित करें"
 msgid "Email"
 msgstr "ईमेल"
 
-#: apps/erp/app/routes/_public+/login.tsx:324
+#: apps/erp/app/routes/_public+/login.tsx:348
 #: apps/erp/app/routes/x+/users+/operators.$operatorId.tsx:143
 msgid "Email Address"
 msgstr "ईमेल पता"
@@ -7065,7 +7065,7 @@ msgstr "लॉक करें"
 msgid "Log In"
 msgstr "लॉग इन करें"
 
-#: apps/erp/app/routes/_public+/login.tsx:362
+#: apps/erp/app/routes/_public+/login.tsx:392
 msgid "Login or create a new account"
 msgstr "लॉगिन करें या नया खाता बनाएं"
 
@@ -9040,6 +9040,10 @@ msgstr "भागीदार"
 msgid "Parts"
 msgstr "पार्ट्स"
 
+#: apps/erp/app/routes/_public+/login.tsx:353
+msgid "Password"
+msgstr ""
+
 #: apps/erp/app/modules/resources/ui/Suggestions/SuggestionDetails.tsx:151
 msgid "Path"
 msgstr "पथ"
@@ -10223,7 +10227,7 @@ msgstr "रिकॉर्ड हटाया गया"
 msgid "Records"
 msgstr "रिकॉर्ड"
 
-#: apps/erp/app/routes/_public+/login.tsx:254
+#: apps/erp/app/routes/_public+/login.tsx:278
 msgid "Redirecting to verification page..."
 msgstr "सत्यापन पृष्ठ पर पुनः निर्देशित किया जा रहा है..."
 
@@ -11796,15 +11800,15 @@ msgstr "उद्धरण, बिक्री आदेश, बिक्री 
 msgid "Show sync options"
 msgstr "सिंक विकल्प दिखाएं"
 
-#: apps/erp/app/routes/_public+/login.tsx:337
+#: apps/erp/app/routes/_public+/login.tsx:367
 msgid "Sign in with Email"
 msgstr "ईमेल के साथ साइन इन करें"
 
-#: apps/erp/app/routes/_public+/login.tsx:301
+#: apps/erp/app/routes/_public+/login.tsx:325
 msgid "Sign in with Google"
 msgstr "Google के साथ साइन इन करें"
 
-#: apps/erp/app/routes/_public+/login.tsx:314
+#: apps/erp/app/routes/_public+/login.tsx:338
 msgid "Sign in with Outlook"
 msgstr "Outlook के साथ साइन इन करें"
 
@@ -13644,7 +13648,7 @@ msgstr "अगला पार्ट आईडी प्राप्त कर�
 msgid "Use ... to get the next tool ID"
 msgstr "अगली टूल ID प्राप्त करने के लिए ... का उपयोग करें"
 
-#: apps/erp/app/routes/_public+/login.tsx:267
+#: apps/erp/app/routes/_public+/login.tsx:291
 #: apps/erp/app/routes/_public+/verify.tsx:182
 msgid "Use a different email"
 msgstr "एक अलग ईमेल का उपयोग करें"
@@ -13738,7 +13742,7 @@ msgstr "VAT संख्या"
 msgid "Verification Error"
 msgstr "सत्यापन त्रुटि"
 
-#: apps/erp/app/routes/_public+/login.tsx:248
+#: apps/erp/app/routes/_public+/login.tsx:272
 #: apps/erp/app/routes/_public+/verify.tsx:162
 msgid "Verify your email"
 msgstr "अपनी ईमेल सत्यापित करें"
@@ -14023,11 +14027,11 @@ msgstr "हमने प्रत्येक कॉलम को मैप क�
 msgid "We've sent a verification code to {email}"
 msgstr "हमने {email} को एक सत्यापन कोड भेजा है"
 
-#: apps/erp/app/routes/_public+/login.tsx:251
+#: apps/erp/app/routes/_public+/login.tsx:275
 msgid "We've sent a verification code to {signupEmail}"
 msgstr "हमने {signupEmail} को एक सत्यापन कोड भेजा है"
 
-#: apps/erp/app/routes/_public+/login.tsx:239
+#: apps/erp/app/routes/_public+/login.tsx:263
 msgid "We've sent you a magic link to sign in to your account."
 msgstr "हमने आपके खाते में साइन इन करने के लिए आपको एक जादुई लिंक भेजा है।"
 
